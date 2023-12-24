@@ -4,6 +4,7 @@ import com.baomidou.mybatisplus.annotation.IdType;
 import com.baomidou.mybatisplus.annotation.TableField;
 import com.baomidou.mybatisplus.annotation.TableId;
 import com.baomidou.mybatisplus.annotation.TableName;
+import javafx.scene.layout.BorderPaneBuilder;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
 import lombok.experimental.Accessors;
@@ -50,6 +51,11 @@ public class Blog implements Serializable {
      */
     @TableField(exist = false)
     private String name;
+    /**
+     * 是否点赞
+     */
+    @TableField(exist = false)
+    private Boolean isLike;
 
     /**
      * 标题

@@ -5,12 +5,11 @@ package com.hmdp.service;/*
 
 import com.baomidou.mybatisplus.extension.service.IService;
 import com.hmdp.dto.Result;
-import com.hmdp.entity.Voucher;
 import com.hmdp.entity.VoucherOrder;
 
 public interface IVoucherOrderService extends IService<VoucherOrder> {
         Result seckillVoucher(Long voucherID);
 
-        Result createVoucherOrder(Long voucherID);
+        void createVoucherOrder(VoucherOrder voucherOrder);
 
 }
